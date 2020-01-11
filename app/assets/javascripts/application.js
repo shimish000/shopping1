@@ -9,8 +9,13 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
+//= require owl.carousel
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+
+$(function(){
+  $(".slide-banner.owl-carousel").owlCarousel();
+});

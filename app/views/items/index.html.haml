@@ -1,4 +1,15 @@
 %body
+-# - breadcrumb :trading
+-# = breadcrumbs separator: " &rsaquo; "
+
+%section.slide-banner.owl-carousel
+  = link_to "", root_path, class: "slide-banner__link slide-banner__link--natsukashi"
+  = link_to "", root_path, class: "slide-banner__link slide-banner__link--new-life"
+  = link_to "", root_path, class: "slide-banner__link slide-banner__link--bokurano-heisei"
+
+
+<br>
 = form_with url: purchase_items_path do
   :plain
     <script type="text/javascript" src="https://checkout.pay.jp" class="payjp-button" data-key="pk_test_2d9f8d82a854cb4c619603e6"></script>
+

@@ -1,0 +1,41 @@
+.slide-banner {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  &__link {
+    display: block;
+    &--natsukashi {
+      @include slide-banner-owl-item-background("banner-natsukashi.jpg");
+    }
+    &--new-life {
+      @include slide-banner-owl-item-background("banner-new-life.jpg");
+    }
+    &--bokurano-heisei {
+      @include slide-banner-owl-item-background("banner-bokurano-heisei.jpg");
+    }
+    & .owl-stage-outer, .owl-stage, .owl-item, .owl-item>a {
+      height: 100%;
+  }
+}
+@media screen and (min-width: 1068px) {
+  .slide-banner {
+    height: 390px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+  .slide-banner {
+    height: 290px;
+  }
+}
+@mixin slide-banner-owl-item-background($background-image) {
+  background: image_url($background-image);
+  background-size: auto 100%;
+  background-position: center;
+}
+
+
+@mixin slide-banner-owl-item-background($background-image) {
+  background: image_url($background-image);
+  background-size: auto 100%;
+  background-position: center;
+}
